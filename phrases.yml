@@ -1,0 +1,20 @@
+AllText:
+  font: ChunkFive Roman,Sans 48
+  color: '#031013'
+
+Title:
+  align: left
+  extends: AllText
+  width: 600
+  height: 200
+  wrap: true
+  x: 10
+
+EffectText:
+  extends: AllText
+  font_size: 36
+  y: 50
+  width: 750
+  height: 900
+  align: center
+  wrap: true
