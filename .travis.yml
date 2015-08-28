@@ -8,8 +8,10 @@ install:
 script:
 #  - pdflatex user_error.tex
   - ruby deck.rb
-  - cp _output/phrases.pdf .
-  - zip RunOn.zip phrases.pdf
+  - cp _output/start.pdf .
+  - cp _output/middle.pdf .
+  - cp _output/end.pdf .
+  - zip RunOn.zip start.pdf middle.pdf end.pdf
 addons:
   artifacts:
     paths:
