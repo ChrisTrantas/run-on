@@ -2,16 +2,16 @@ language: ruby
 rvm:
   - 2.1.0
 install:
-#  - sudo apt-get install texlive texlive-latex-extra
+  - sudo apt-get install texlive texlive-latex-extra
   - gem update --system # maybe fixes timeouts!?
   - gem install squib
 script:
-#  - pdflatex user_error.tex
+  - pdflatex rules.tex
   - ruby deck.rb
   - cp _output/start.pdf .
   - cp _output/middle.pdf .
   - cp _output/end.pdf .
-  - zip RunOn.zip start.pdf middle.pdf end.pdf
+  - zip RunOn.zip start.pdf middle.pdf end.pdf rules.pdf
 addons:
   artifacts:
     paths:
