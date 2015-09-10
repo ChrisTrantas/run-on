@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.1.0
 install:
-  - sudo apt-get install texlive texlive-latex-extra
+  - sudo apt-get install texlive texlive-latex-extra ttf-mscorefonts-installer
   - gem update --system # maybe fixes timeouts!?
   - gem install squib
 script:
